@@ -13,6 +13,7 @@
 		28DEACA21FE3BE7A0006983C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DEACA11FE3BE7A0006983C /* Assets.xcassets */; };
 		28DEACA51FE3BE7A0006983C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DEACA31FE3BE7A0006983C /* LaunchScreen.storyboard */; };
 		28DEACA81FE3BE7A0006983C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DEACA71FE3BE7A0006983C /* main.m */; };
+		28DEAD251FE3C3720006983C /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DEAD241FE3C3720006983C /* UIView+LZFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		28DEACA41FE3BE7A0006983C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28DEACA61FE3BE7A0006983C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28DEACA71FE3BE7A0006983C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28DEAD231FE3C3720006983C /* UIView+LZFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
+		28DEAD241FE3C3720006983C /* UIView+LZFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
+		28DEAD2E1FE3D4010006983C /* ChooseDate_coding.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseDate_coding.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,24 @@
 				28DEAC991FE3BE7A0006983C /* AppDelegate.m */,
 				28DEAC9B1FE3BE7A0006983C /* ViewController.h */,
 				28DEAC9C1FE3BE7A0006983C /* ViewController.m */,
+				28DEAD2D1FE3CB0F0006983C /* LZFrame */,
 				28DEAC9E1FE3BE7A0006983C /* Main.storyboard */,
 				28DEACA11FE3BE7A0006983C /* Assets.xcassets */,
 				28DEACA31FE3BE7A0006983C /* LaunchScreen.storyboard */,
 				28DEACA61FE3BE7A0006983C /* Info.plist */,
+				28DEAD2E1FE3D4010006983C /* ChooseDate_coding.pch */,
 				28DEACA71FE3BE7A0006983C /* main.m */,
 			);
 			path = ChooseDate_Coding;
+			sourceTree = "<group>";
+		};
+		28DEAD2D1FE3CB0F0006983C /* LZFrame */ = {
+			isa = PBXGroup;
+			children = (
+				28DEAD231FE3C3720006983C /* UIView+LZFrame.h */,
+				28DEAD241FE3C3720006983C /* UIView+LZFrame.m */,
+			);
+			path = LZFrame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DEAC9D1FE3BE7A0006983C /* ViewController.m in Sources */,
+				28DEAD251FE3C3720006983C /* UIView+LZFrame.m in Sources */,
 				28DEACA81FE3BE7A0006983C /* main.m in Sources */,
 				28DEAC9A1FE3BE7A0006983C /* AppDelegate.m in Sources */,
 			);
@@ -280,6 +296,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ChooseDate_Coding/ChooseDate_coding.pch";
 				INFOPLIST_FILE = ChooseDate_Coding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lzwang.ChooseDate-Coding";
@@ -295,6 +313,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ChooseDate_Coding/ChooseDate_coding.pch";
 				INFOPLIST_FILE = ChooseDate_Coding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lzwang.ChooseDate-Coding";
